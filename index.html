@@ -3,9 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HopeTrumps | HPTP</title>
+    <title>HopeTrumps | Your Token of Hope</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-color: #1a1a1a;
+        }
+
+        header {
+            background-color: rgba(0, 123, 255, 0.8);
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .features, .about {
+            padding: 40px;
+        }
+
+        .feature-cards {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .feature-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-details {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .about-feature {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .about-feature h3 {
+            color: #28a745;
+        }
+
+        .cta {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 123, 255, 0.8);
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,117 +115,76 @@
             <img src="logo.png" alt="HopeTrumps Logo">
             <h1>HopeTrumps</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#roadmap">Roadmap</a></li>
-                <li><a href="#education">Learn</a></li>
-                <li><a href="#contact">Contact</a></li>
-				<li><a href="risk_disclaimer.html">Risk Disclaimer</a></li>
-
-            </ul>
-        </nav>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
             <h2>Your Token of Hope</h2>
-            <p>Inspiring Hope Through Community</p>
-            <a href="https://pancakeswap.finance/?outputCurrency=0x6c2E76986E9A9527af17f8D67068BD108ed48F97" target="_blank"><button>Buy HPT</button></a>
+            <p>Reflections. Rewards. Real Impact.</p>
+            <a href="https://pancakeswap.finance/?outputCurrency=0x6c2E76986E9A9527af17f8D67068BD108ed48F97" target="_blank">
+                <button>Buy HPT</button>
+            </a>
         </section>
 
+        <!-- Features Section -->
         <section id="features" class="features">
-            <h2>Features</h2>
-            <div class="feature">
-                <h3>Reflections</h3>
-                <p>Earn passive rewards with every transaction.</p>
-            </div>
-            <div class="feature">
-                <h3>Anti-Whale Protection</h3>
-                <p>Ensuring fairness for all token holders.</p>
-            </div>
-            <div class="feature">
-                <h3>Charity Integration</h3>
-                <p>Supporting causes that make a difference.</p>
+            <h2 class="section-title">Our Features</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <img src="reflections-icon.png" alt="Reflections Icon">
+                    <h3>Reflections</h3>
+                    <p>Earn passive rewards with every transaction by simply holding HPT in your wallet.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="anti-whale-icon.png" alt="Anti-Whale Icon">
+                    <h3>Anti-Whale Protection</h3>
+                    <p>Fairness ensured with penalties for large transactions to maintain stability.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="charity-icon.png" alt="Charity Icon">
+                    <h3>Charity Integration</h3>
+                    <p>Every trade contributes to impactful causes, making a difference worldwide.</p>
+                </div>
             </div>
         </section>
 
-        <section id="roadmap" class="roadmap">
-    <h2>Roadmap</h2>
-    <div class="roadmap-item">
-        <h3>Phase 1</h3>
-        <p>Token Deployment and Community Building</p>
-        <p>Status: In Progress</p>
-    </div>
-    <div class="roadmap-item">
-        <h3>Phase 2</h3>
-        <p>Exchange Listings and Marketing Push</p>
-        <p>Status: Planned</p>
-    </div>
-    <div class="roadmap-item">
-        <h3>Phase 3</h3>
-        <p>Governance and Advanced Features</p>
-        <p>Status: Planned</p>
-    </div>
-    <div class="roadmap-item">
-        <h3>Phase 4</h3>
-        <p>Multi-Chain Compatibility</p>
-        <p>Status: Planned</p>
-    </div>
-    <div class="roadmap-item">
-        <h3>Phase 5</h3>
-        <p>Continuous Ecosystem Growth</p>
-        <p>Status: Planned</p>
-    </div>
-</section>
+        <!-- About Section -->
+        <section id="about-hope-trumps" class="about">
+            <h2 class="section-title">Learn About HopeTrumps</h2>
+            <div class="about-details">
+                <div class="about-feature">
+                    <h3>Reflections</h3>
+                    <p>A portion of every transaction is distributed to token holders, allowing you to earn passive rewards simply by holding HPT in your wallet.</p>
+                </div>
+                <div class="about-feature">
+                    <h3>Anti-Whale Protection</h3>
+                    <p>Large transactions incur penalties to ensure price stability, fostering a balanced and fair trading environment.</p>
+                </div>
+                <div class="about-feature">
+                    <h3>Charity Integration</h3>
+                    <p>A percentage of every transaction supports impactful causes, making every trade contribute to a better world.</p>
+                </div>
+            </div>
 
+            <div class="cta">
+                <h3>Why Choose HopeTrumps?</h3>
+                <ul>
+                    <li>Secure and transparent operations powered by blockchain technology.</li>
+                    <li>Continuous ecosystem growth through innovative features.</li>
+                    <li>A commitment to giving back through charitable initiatives.</li>
+                </ul>
+            </div>
 
-        <section id="About-Hope-Trumps" class="features">
-    <h2>Learn About HopeTrumps</h2>
-    <p>
-        HopeTrumps is designed to empower communities by combining reflections, anti-whale mechanisms, and charitable contributions. Here's how it works:
-    </p>
-    <ul>
-        <li>
-            <strong>Reflections:</strong> A portion of every transaction is distributed to token holders, allowing you to earn passive rewards simply by holding HPT in your wallet.
-        </li>
-        <li>
-            <strong>Anti-Whale Protection:</strong> Large transactions incur penalties to ensure price stability, fostering a balanced and fair trading environment.
-        </li>
-        <li>
-            <strong>Charity Integration:</strong> A percentage of every transaction supports impactful causes, making every trade contribute to a better world.
-        </li>
-    </ul>
-    <div class="cta">
-        <h3>Why Choose HopeTrumps?</h3>
-        <p>
-            HopeTrumps isn't just another cryptocurrency. It's a community-driven asset designed to make a real impact:
-        </p>
-        <ul>
-            <li>Secure and transparent operations powered by blockchain technology.</li>
-            <li>Continuous ecosystem growth through innovative features.</li>
-            <li>A commitment to giving back through charitable initiatives.</li>
-        </ul>
-    </div>
-    <div class="cta">
-        <h3>How It Works</h3>
-        <p>
-            Every transaction within the HopeTrumps ecosystem fuels the mission:
-        </p>
-        <ol>
-            <li>A percentage is distributed to holders as reflections.</li>
-            <li>Anti-whale mechanisms ensure stable and fair trading.</li>
-            <li>Charity contributions are automatically allocated to selected causes.</li>
-        </ol>
-        <p>By simply holding HPT, you become a part of this powerful movement.</p>
-    </div>
-    <p>Learn more in our <a href="whitepaper.pdf">whitepaper</a>.</p>
-</section>
-
-
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <p>Join our community on <a href="https://t.me/HopeTrumpsHPTPofficial" target="_blank">Telegram</a>.</p>
+            <div class="cta">
+                <h3>How It Works</h3>
+                <ol>
+                    <li>A percentage is distributed to holders as reflections.</li>
+                    <li>Anti-whale mechanisms ensure stable and fair trading.</li>
+                    <li>Charity contributions are automatically allocated to selected causes.</li>
+                </ol>
+                <p>By simply holding HPT, you become a part of this powerful movement.</p>
+            </div>
         </section>
     </main>
 
