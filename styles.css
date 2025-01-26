@@ -1,0 +1,236 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 123, 255, 0.7); /* Transparent blue */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative; /* Ensure it's above the logo */
+    z-index: 10; /* Higher z-index to layer it above the logo */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background: url('logo.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Features, Roadmap, etc. */
+.features, .roadmap, .education, .contact {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.features h2, .roadmap h2, .education h2, .contact h2 {
+    text-align: center;
+    color: white;
+}
+
+/* Roadmap */
+.roadmap {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.roadmap-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.roadmap-item:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+/* Risk Disclaimer Section */
+.disclaimer {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent gray background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: white;
+    text-align: justify; /* Ensure text is evenly spaced */
+}
+
+.disclaimer h2, .disclaimer h3 {
+    color: white;
+    text-align: center;
+}
+
+.disclaimer p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 123, 255, 0.7); /* Transparent blue */
+    color: white;
+    position: relative; /* Ensures it stays above the logo */
+    z-index: 10; /* Higher z-index to keep it above the logo */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style for regular links */
+a {
+    color: #00ffff; /* Bright cyan for better contrast */
+    text-decoration: none; /* Remove the default underline */
+    font-weight: bold; /* Make the links stand out */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Subtle shadow for better readability */
+}
+
+/* Style for hover effect */
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #ffffff; /* Change color to white on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Add a subtle background highlight */
+    border-radius: 5px; /* Slight rounding for hover background */
+    padding: 2px 4px; /* Padding for hover background */
+}
+
+/* Style for visited links */
+a:visited {
+    color: #ffa500; /* Different color for visited links (orange) */
+}
+
+.hero {
+    text-align: center;
+    padding: 15px; /* Reduced padding for a more compact height */
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+    border-radius: 10px;
+    max-width: 500px; /* Smaller width */
+    margin: 0 auto; /* Center horizontally */
+    display: flex;
+    flex-direction: column; /* Arrange elements in a column */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 50vh; /* Adjust height for a more compact section */
+}
+
+.hero h2 {
+    font-size: 1.8em; /* Slightly smaller font size for the title */
+    font-weight: bold;
+    color: #ffffff; /* White text */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Subtle shadow */
+    margin-bottom: 8px;
+}
+
+.hero p {
+    font-size: 1em; /* Slightly smaller font size for the subtitle */
+    color: #dddddd; /* Lighter gray for subtler contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Subtle shadow */
+    margin-bottom: 10px;
+}
+
+.hero button {
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    padding: 6px 12px; /* Slightly smaller button dimensions */
+    border-radius: 5px;
+    font-size: 0.9em; /* Reduced font size for the button */
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+    transform: scale(1.05); /* Subtle hover effect */
+}
+
+#about-hope-token {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+}
+
+#about-hope-token h2, #about-hope-token h3 {
+    text-align: center;
+    color: white;
+}
+
+#about-hope-token ul, #about-hope-token ol {
+    margin-left: 20px;
+    list-style: disc;
+}
+
+#about-hope-token .cta {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
