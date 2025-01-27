@@ -16,10 +16,13 @@
         }
 
         header {
-            background-color: rgba(0, 123, 255, 0.8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
             padding: 20px;
-            text-align: center;
-            position: sticky;
+            position: fixed;
+            width: 100%;
             top: 0;
             z-index: 1000;
         }
@@ -28,11 +31,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            background-color: rgba(50, 50, 50, 0.5);
+            padding: 10px;
+            border-radius: 10px;
         }
 
         header .logo img {
             height: 50px;
             margin-right: 10px;
+        }
+
+        header .logo h1 {
+            font-size: 1.5em;
         }
 
         .section-title {
@@ -94,38 +104,101 @@
         .cta {
             margin-top: 40px;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(0, 0, 0, 0.6);
             border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         footer {
             text-align: center;
             padding: 10px;
-            background-color: rgba(0, 123, 255, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             color: white;
             position: relative;
             bottom: 0;
             width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer-disclaimer {
+            font-size: 0.9em;
+        }
+
+        .footer-disclaimer a {
+            color: orange;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer-disclaimer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-community a {
+            color: orange;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer-community a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: orange;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="HopeTrumps Logo">
+            <img src="token-icon.png" alt="Token Icon">
             <h1>HopeTrumps</h1>
         </div>
     </header>
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
-            <h2>Your Token of Hope</h2>
-            <p>Reflections. Rewards. Real Impact.</p>
-            <a href="https://pancakeswap.finance/?outputCurrency=0x6c2E76986E9A9527af17f8D67068BD108ed48F97" target="_blank">
-                <button>Buy HPT</button>
-            </a>
-        </section>
+       <section class="hero">
+    <div class="feature-card" style="text-align: center; margin: auto; max-width: 400px;">
+        <h2>Your Token of Hope</h2>
+        <p>Empowering Communities. Driving Change. Building a Brighter Future.</p>
+        <hr style="border-color: rgba(255, 255, 255, 0.2); margin: 15px 0;">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <img src="contract-placeholder.png" alt="Contract Icon" style="height: 30px;">
+                <p style="margin: 0;">Contract Address:</p>
+            </div>
+            <p style="word-wrap: break-word; color: #f8f9fa;">0x6c2E76986E9A9527af17f8D67068BD108ed48F97</p>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <img src="poocoin-placeholder.png" alt="Poocoin Chart Icon" style="height: 30px;">
+                <a href="https://poocoin.app/tokens/0x6c2e76986e9a9527af17f8d67068bd108ed48f97" target="_blank" style="color: #28a745; font-weight: bold; text-decoration: none;">
+                    View Poocoin Chart
+                </a>
+            </div>
+        </div>
+        <hr style="border-color: rgba(255, 255, 255, 0.2); margin: 15px 0;">
+        <a href="https://pancakeswap.finance/?outputCurrency=0x6c2E76986E9A9527af17f8D67068BD108ed48F97" target="_blank">
+            <button style="background-color: #28a745; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+                Buy HPT
+            </button>
+        </a>
+    </div>
+</section>
+
 
         <!-- Features Section -->
         <section id="features" class="features">
@@ -189,7 +262,17 @@
     </main>
 
     <footer>
-        <p>Join our <a href="https://t.me/HopeTrumps" style="color: orange;">community</a> on Telegram.</p>
+        <div class="footer-disclaimer">
+            <a href="risk_disclaimer.html">Disclaimer</a>
+        </div>
+        <div class="footer-community">
+            Join our <a href="https://t.me/HopeTrumps">community</a> on Telegram.
+        </div>
+        <div class="footer-links">
+		    <a href="how-to-buy.html">How to Buy</a>
+            <a href="#stories-of-hope">Stories of Hope</a>
+            <a href="roadmap.html">Road Map</a>
+        </div>
     </footer>
 </body>
 </html>

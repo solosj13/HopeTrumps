@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopeTrumps | Road Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background: url('logo.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        header .logo h1 {
+            font-size: 1.5em;
+        }
+
+        header .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        header .nav-links a {
+            color: orange;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        header .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .roadmap-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .roadmap-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #28a745;
+        }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .roadmap-card {
+            background-color: rgba(50, 50, 50, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .roadmap-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .roadmap-card h3 {
+            margin: 0;
+            font-size: 1.8em;
+            color: orange;
+        }
+
+        .roadmap-card p {
+            margin: 10px 0;
+            font-size: 1em;
+        }
+
+        footer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="token-icon.png" alt="Token Icon">
+            <h1>HopeTrumps</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#">Stories of Hope</a>
+        </div>
+    </header>
+
+    <div class="roadmap-container">
+        <h1 class="roadmap-title">Road Map</h1>
+        <div class="roadmap-grid">
+            <div class="roadmap-card">
+                <h3>Phase 1</h3>
+                <p>Token Deployment and Community Building</p>
+                <p>Status: In Progress</p>
+            </div>
+            <div class="roadmap-card">
+                <h3>Phase 2</h3>
+                <p>Exchange Listings and Marketing Push</p>
+                <p>Status: Planned</p>
+            </div>
+            <div class="roadmap-card">
+                <h3>Phase 3</h3>
+                <p>Governance and Advanced Features</p>
+                <p>Status: Planned</p>
+            </div>
+            <div class="roadmap-card">
+                <h3>Phase 4</h3>
+                <p>Multi-Chain Compatibility</p>
+                <p>Status: Planned</p>
+            </div>
+            <div class="roadmap-card">
+                <h3>Phase 5</h3>
+                <p>Continuous Ecosystem Growth</p>
+                <p>Status: Planned</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
